@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  entry: './src/scripts/index.ts',
+  entry: './src/scripts/sw.ts',
   module: {
     rules: [
       {
@@ -17,14 +17,9 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
   },
-  plugins: [
-    new Dotenv({
-      systemvars: true
-    })
-  ],
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist', 'assets', 'scripts')
+    filename: 'sw.js',
+    path: path.resolve(__dirname, 'dist')
   }
   // devtool: 'source-map'
 };

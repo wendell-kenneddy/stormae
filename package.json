@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "export NODE_ENV=development && webpack -w && postcss src/css/main.css -o dist/assets/css/main.css -w",
-    "build": "export NODE_ENV=production && webpack && postcss src/css/main.css -o dist/assets/css/main.css"
+    "build": "export NODE_ENV=production && webpack && postcss src/css/main.css -o dist/assets/css/main.css",
+    "dev:sw": "export NODE_ENV=development && webpack --config webpack.sw.config.js",
+    "build:sw": "export NODE_ENV=production && webpack --config webpack.sw.config.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.32.0",
@@ -29,6 +31,11 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "@types/node": "^16.10.2"
+    "@types/node": "^16.10.2",
+    "workbox-cacheable-response": "^6.3.0",
+    "workbox-expiration": "^6.3.0",
+    "workbox-precaching": "^6.3.0",
+    "workbox-routing": "^6.3.0",
+    "workbox-strategies": "^6.3.0"
   }
 }
