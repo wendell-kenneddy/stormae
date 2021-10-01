@@ -29,6 +29,11 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "@types/node": "^16.10.2"
+    "@types/node": "^16.10.2",
+    "workbox-cacheable-response": "^6.3.0",
+    "workbox-expiration": "^6.3.0",
+    "workbox-precaching": "^6.3.0",
+    "workbox-routing": "^6.3.0",
+    "workbox-strategies": "^6.3.0"
   }
 }
