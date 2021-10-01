@@ -20,6 +20,6 @@ module.exports = {
   output: {
     filename: 'sw.js',
     path: path.resolve(__dirname, 'dist')
-  },
-  devtool: 'source-map'
+  }
+  // devtool: 'source-map'
 };
