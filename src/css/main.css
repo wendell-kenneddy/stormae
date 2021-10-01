@@ -1,0 +1,4 @@
+@import url('./global/reset.css');
+@import url('./components/location-query.css');
+@import url('./components/form.css');
+@import url('./components/result.css');

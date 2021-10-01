@@ -1,0 +1,11 @@
+main #location-query {
+  background: var(--surface);
+  width: 100%;
+  border-radius: 0.4rem;
+  margin: 2.4rem auto 0;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: var(--shadow);
+}

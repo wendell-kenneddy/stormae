@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Visuaalize o clima no mundo." />
+    <meta name="author" content="Wendell Kenneddy" />
+    <meta name="creator" content="Wendell Kenneddy" />
+    <meta property="og:title" content="Stormae" />
+    <meta property="og:description" content="Visuaalize o clima no mundo." />
+    <meta property="og:site_name" content="Stormae" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="twitter:title" content="Stormae" />
+    <meta
+      property="twitter:description"
+      content="Visuaalize o clima no mundo."
+    />
+    <title>Stormae</title>
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+
+  <body>
+    <main class="container" role="main">
+      <section id="location-query">
+        <h1>Busque qualquer lugar do mundo.</h1>
+
+        <form action="#" id="weather-form" autocomplete="off">
+          <label for="query" class="sr-only">Localidade</label>
+          <input
+            type="text"
+            name="query"
+            id="query"
+            required
+            placeholder="Ex: Londres, Tokyo, Nova Iorque..."
+          />
+
+          <button>BUSCAR</button>
+        </form>
+      </section>
+
+      <section id="result">
+        <h2 class="sr-only">Resultados</h2>
+      </section>
+    </main>
+
+    <script src="/assets/scripts/index.js"></script>
+  </body>
+</html>

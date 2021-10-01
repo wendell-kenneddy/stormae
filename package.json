@@ -1,0 +1,34 @@
+{
+  "name": "stormae",
+  "description": "A weather checking app built with Typescript.",
+  "version": "1.0.0",
+  "main": "/src/scripts/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "export NODE_ENV=development && webpack -w && postcss src/css/main.css -o dist/assets/css/main.css -w",
+    "build": "export NODE_ENV=production && webpack && postcss src/css/main.css -o dist/assets/css/main.css"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "autoprefixer": "^10.3.6",
+    "cssnano": "^5.0.8",
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "postcss": "^8.3.8",
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "prettier": "^2.4.1",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "@types/node": "^16.10.2"
+  }
+}
